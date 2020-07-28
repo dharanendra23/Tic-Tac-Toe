@@ -4,23 +4,16 @@ using namespace std;
 void Design(char num1,char num2,char num3,char num4,char num5,char num6,char num7,char num8,char num9)
 {
     cout<<"\n\n\n\n";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+    cout<<"\t";
     cout<<"TIC-TAC-TOE : "<<endl;
     cout<<"\n\n\n\n\n";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-    cout<<"|---|---|---|";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-    cout<<"| "<<num1<<" | "<<num2<<" | "<<num3<<" |";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-    cout<<"|---|---|---|";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-    cout<<"| "<<num4<<" | "<<num5<<" | "<<num6<<" |";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-    cout<<"|---|---|---|";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-    cout<<"| "<<num7<<" | "<<num8<<" | "<<num9<<" |";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
-    cout<<"|---|---|---|\n";
+    cout<<"\t|---|---|---|";
+    cout<<"\n\t| "<<num1<<" | "<<num2<<" | "<<num3<<" |";
+    cout<<"\n\t|---|---|---|";
+    cout<<"\n\t| "<<num4<<" | "<<num5<<" | "<<num6<<" |";
+    cout<<"\n\t|---|---|---|";
+    cout<<"\n\t| "<<num7<<" | "<<num8<<" | "<<num9<<" |";
+    cout<<"\n\t|---|---|---|\n";
 }
 
 int main()
@@ -37,12 +30,12 @@ int main()
         cout<<"\n\n";
         if(num==1)
         {
-            cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+            cout<<"\t";
             cout<<"Player 1 : O\n";
-            cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+            cout<<"\t";
             cout<<"Player 2 : X\n";
         }
-        cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+        cout<<"\t";
         if(num%2!=0)
             cout<<"Player 1 : Enter any number from above box : ";
         else
@@ -82,7 +75,7 @@ int main()
 
                 default :
                             num--;
-                            cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+                            cout<<"\t";
                             cout<<"Please enter a valid number!";
                             break;
             }
@@ -123,7 +116,7 @@ int main()
                             num--;
                             system("CLS");
                             Design(num1,num2,num3,num4,num5,num6,num7,num8,num9);
-                            cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+                            cout<<"\t";
                             cout<<"Please enter a valid number!";
                             break;
             }
@@ -134,7 +127,7 @@ int main()
             {
                 system("CLS");
                 Design(num1,num2,num3,num4,num5,num6,num7,num8,num9);
-                cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+                cout<<"\t";
                 cout<<"Player 1 won the game!"<<endl;
                 count1++;
                 break;
@@ -143,7 +136,7 @@ int main()
             {
                 system("CLS");
                 Design(num1,num2,num3,num4,num5,num6,num7,num8,num9);
-                cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+                cout<<"\t";
                 cout<<"Player 2 won the game!"<<endl;
                 count1++;
                 break;
@@ -157,10 +150,10 @@ int main()
     {
         system("CLS");
         Design(num1,num2,num3,num4,num5,num6,num7,num8,num9);
-        cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+        cout<<"\t";
         cout<<"Game tied !\n";
     }
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t";
+    cout<<"\t";
     cout<<"Enter E to exit the game Or Any key to restart the game : ";
     cin>>ch2;
     if(ch2=='E')
